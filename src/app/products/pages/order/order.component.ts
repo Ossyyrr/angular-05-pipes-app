@@ -21,4 +21,10 @@ export class OrderComponent {
     { name: 'Robin', canFly: false, color: Color.green },
     { name: 'Lobezno', canFly: false, color: Color.yellow },
   ];
+
+  public sortBy?: keyof Hero;
+
+  public sortByValue(value: keyof Hero): void {
+    this.sortBy = value;
+  }
 }
