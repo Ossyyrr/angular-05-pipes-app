@@ -1,0 +1,53 @@
+<p-panel header="Pipes básicos" class="p-1">
+  <h1>Pipes básicos</h1>
+
+  <p>Pipes incluidos en Ángular - Usualmente en el Common Module</p>
+</p-panel>
+
+<div>
+  <div class="grid">
+    <div class="col-12 md:col-4">
+      <p-card header="Uppercase"> {{ myName | uppercase }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="Lowercase"> {{ myName | lowercase }}</p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="Titlecase"> {{ myName | titlecase }} </p-card>
+    </div>
+    <div class="col-12 md:col-4">
+      <p-card header="Slice">{{ myName | slice : 2 : 6 }}</p-card>
+    </div>
+    <div class="col-12 md:col-6">
+      <p-card header="Date">
+        <ul>
+          <li>date -> {{ customDate | date }}</li>
+          <li>date : "sort" -> {{ customDate | date : "sort" }}</li>
+          <li>date : "long" -> {{ customDate | date : "long" }}</li>
+          <li>date : "MMM" -> {{ customDate | date : "MMM" }}</li>
+          <li>
+            date : "MMMM dd, yyyy" -> {{ customDate | date : "MMMM dd, yyyy" }}
+          </li>
+        </ul>
+
+        <hr />
+
+        <h2>Zona horaria</h2>
+        <ul>
+          <li>
+            date:'long':GMT-6 ->
+            {{ customDate | date : "long" : "GMT-6" }} date:'long':GMT-6
+          </li>
+
+          <li>
+            date:'long':GMT-4 -> {{ customDate | date : "long" : "GMT-4" }}
+          </li>
+          <li>
+            date : "long" : "locale" ->
+            {{ customDate | date : "long" : "locale" }}
+          </li>
+        </ul>
+      </p-card>
+    </div>
+  </div>
+</div>
