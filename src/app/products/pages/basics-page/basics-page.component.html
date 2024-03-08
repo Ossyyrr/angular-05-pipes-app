@@ -15,9 +15,7 @@
     <div class="col-12 md:col-4">
       <p-card header="Titlecase"> {{ myName | titlecase }} </p-card>
     </div>
-    <div class="col-12 md:col-4">
-      <p-card header="Slice">{{ myName | slice : 2 : 6 }}</p-card>
-    </div>
+
     <div class="col-12 md:col-6">
       <p-card header="Date">
         <ul>
@@ -31,20 +29,27 @@
         </ul>
 
         <hr />
+      </p-card>
+    </div>
 
-        <h2>Zona horaria</h2>
+    <div class="col-12 md:col-6">
+      <p-card header="Zona horaria">
         <ul>
           <li>
-            date:'long':GMT-6 ->
+            date:'long':'GMT-6' ->
             {{ customDate | date : "long" : "GMT-6" }} date:'long':GMT-6
           </li>
-
           <li>
-            date:'long':GMT-4 -> {{ customDate | date : "long" : "GMT-4" }}
+            date:'long':'GMT-4' -> {{ customDate | date : "long" : "GMT-4" }}
           </li>
           <li>
             date : "long" : "locale" ->
             {{ customDate | date : "long" : "locale" }}
+          </li>
+
+          <li>
+            date : "long" : "" : "es-HN" ->
+            {{ customDate | date : "long" : "" : "es-HN" }}
           </li>
         </ul>
       </p-card>
