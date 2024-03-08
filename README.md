@@ -1,27 +1,41 @@
 # 05PipesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+Todos los Pipes de Angular a la fecha
 
-## Development server
+Uppercase
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Lowercase
 
-## Code scaffolding
+TitleCase
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Date
 
-## Build
+Decimal
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Currency
 
-## Running unit tests
+Percent
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+i18nSelect
 
-## Running end-to-end tests
+i18Plural
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+KeyValue
 
-## Further help
+Json
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Async
+
+PrimeNG
+
+Módulo especializado para módulos de PrimeNG
+
+PrimeNG es un paquete de componentes estilizados que contienen funcionalidades basadas en Angular para crear aplicaciones elegantes, hermosas y funcionales rápidamente.
+
+Recuerden que PrimeNG no es el único, hay muchos pero la mayoría funcionan de formas similares, importando módulos, por eso mi objetivo de entrenarlos bastante bien con el manejo de módulos en todo momento para que nos familiaricemos con esta métodología.
+
+Pipes personalizados
+
+Argumentos hacia los Pipes
+
+SortableTable manual y usando PrimeNg
